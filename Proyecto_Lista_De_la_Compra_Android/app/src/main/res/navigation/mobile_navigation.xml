@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tarea4_davidramosdelpino.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_productoFragment"
+            app:destination="@id/productoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.tarea4_davidramosdelpino.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.tarea4_davidramosdelpino.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/productoFragment"
+        android:name="com.example.tarea4_davidramosdelpino.ProductoFragment"
+        android:label="fragment_producto_list"
+        tools:layout="@layout/fragment_producto_list" />
+
+    <fragment
+        android:id="@+id/nav_listasCompartir"
+        android:name="com.example.tarea4_davidramosdelpino.ListasCompartir"
+        android:label="fragment_listas_compartir"
+        tools:layout="@layout/fragment_listas_compartir" />
+
+</navigation>
