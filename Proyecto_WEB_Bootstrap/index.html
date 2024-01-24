@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .custom-width {
+      width: 100px; /* Establezco el ancho para hacer wl width del Botón más pequeño */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="border border-gray rounded">
+          <div class="border-bottom border-gray bg-light p-2">
+            <p class="text-left m-0 pl-2">Acceso a la web</p>
+          </div>
+          <div class="p-4 bg-white">
+            <div class="form-group">
+              <label for="usuario">Nombre de usuario</label>
+              <input type="text" class="form-control" id="usuario">
+            </div>
+            <div class="form-group">
+              <label for="contraseña">Contraseña</label>
+              <input type="password" class="form-control" id="contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary custom-width" onclick="comprobar()">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function comprobar() {
+      var username = document.getElementById("usuario").value;
+      var password = document.getElementById("contraseña").value;
+
+      if (username === "admin" && password === "admin") {
+        window.location.href = "pages/principal.html"; // Redirige a otra página si las credenciales son correctas
+      } else {
+        alert("Usuario o Contraseña incorrectos"); // Muestra un mensaje de alerta si las credenciales son incorrectas
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+

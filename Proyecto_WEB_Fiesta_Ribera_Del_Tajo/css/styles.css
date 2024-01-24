@@ -1,0 +1,222 @@
+/*@font-face {
+    font-family: Cocogoose;
+    src: url(../font/Cocogoose.otf);
+}*/
+body{
+    margin: 0%;
+    padding: 0%;
+   /* font-family: Cocogoose;*/
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+.menus{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}
+.menuchico{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding-top: 5px;
+}
+.menuchico a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.menugrande{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+}
+.menugrande a{
+    color: rgba(0, 0, 0, 0.597);
+    text-decoration: none;
+    margin-right: 30px;
+}
+.menugrande img{
+    width: 5%;
+    padding-right: 63%;
+    margin: 1%;
+}
+div.informacion{
+    background-image: url(../images/fondo.png);
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 12%;
+    padding-bottom: 5%;
+    margin-bottom: 0px;
+}
+.informacion h1{
+    color:rgb(255, 183, 0);
+    font-size: 60px;
+}
+.informacion h3{
+    font-size: 40px;
+    color: rgb(92, 91, 91);
+}
+p.aniversario{
+    font-size: 30px;
+    color: rgba(44, 44, 206, 0.961);
+}
+.informacion span,h1,h3{
+    font-weight:600;
+}
+div.borde{
+    border: 3px white solid;
+    padding-left: 10px;
+    width: 55%;
+}
+div.contador{
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    padding-left: 15%;
+}
+.contador{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 0%;
+}
+div.programa{
+    background-image: url(../images/fill-bg.png);
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    flex-direction: column;
+}
+div.contenedorprogramas{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-evenly;
+}
+div.programa>p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+}
+div.contenedorprogramas>div{
+    background-color: rgb(255, 255, 255,0.2);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-left: 2%;
+    width: 50%;
+    line-height: 25px;
+    text-align: center;
+}
+div.contenedorprogramas .cprogramasrojo{
+    color: rgb(220, 67, 67);
+}
+div.contenedorprogramas .cprogramasblanco{
+    color: rgb(255, 255, 255);
+}
+div.programa>a{
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+div.programa>hr{
+    width: 4%;
+    border-color: rgb(220, 67, 67);
+    margin-bottom: 7%;
+}
+div.presentadores>h3{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(48, 47, 47);
+    margin-bottom: 0%;
+}
+div.presentadores>hr{
+    width: 4%;
+    border-color: rgb(220, 67, 67);
+}
+div.contenedordepre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+div.presentador{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;  
+    margin-top:3%; 
+    line-height: 30px;
+}
+div.presentador img{
+    width: 25%;
+    z-index: 2%;
+}
+div.presentador hr{
+    width: 4%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+}
+div.presentador div{
+    margin-left: 3%;
+}
+div.presentador p.nombre{
+    font-weight: 550;
+    color: rgb(48, 47, 47);
+    font-size: 17px;
+    margin: 0%;
+}
+div.presentador p.profesion{
+    color: orange;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0%;
+}
+div.patrocinadores{
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    flex-direction: column;
+}
+div.patrocinadores h3{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 0%;
+}
+div.patrocinadores>hr{
+    width: 4%;
+    border-color: rgb(220, 67, 67);
+    margin-bottom: 2%;
+}
+div.patrocinadores div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.patrocinadores div img{
+    width: 15%;
+    height: 15%;
+    filter: grayscale(100%);
+}
+footer{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+footer img{
+    margin-right: 10%;
+    width: 8%;
+}
+

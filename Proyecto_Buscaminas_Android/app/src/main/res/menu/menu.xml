@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/instr"
+        android:title="Instrucciones" />
+    <item
+        android:id="@+id/rej"
+        android:title="Reiniciar El Juego" />
+    <item
+        android:id="@+id/skin"
+        android:icon="@drawable/mina1"
+        android:title="Configurar el Juego"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cej"
+        android:title="Configurar El Juego" />
+</menu>

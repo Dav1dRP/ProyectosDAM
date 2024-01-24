@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportUT6" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4af9bdb6-a7d7-4398-9dc3-d2fc02d0019e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="ubicacion" class="java.lang.String"/>
+	<field name="listapeliculas" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="222" y="23" width="315" height="41" uuid="3d2bf5a5-6819-41d6-b6a7-881a77322241"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lista de Cines]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="84" y="2" width="100" height="20" uuid="31ff09a1-55c1-4d0a-aec6-4480abef5db1"/>
+				<text><![CDATA[nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="2" width="100" height="20" uuid="2fe50a16-2e75-464c-b82c-d946399f58c2"/>
+				<text><![CDATA[ubicacion]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="184" splitType="Stretch">
+			<subreport>
+				<reportElement x="117" y="35" width="326" height="149" uuid="43d3d3b9-9ce5-4caf-87fc-d374ec112959"/>
+				<dataSourceExpression><![CDATA[$F{listapeliculas}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["C:\\Users\\Tarde.13_b21_ribera\\reportUT6_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="84" y="13" width="100" height="20" uuid="18ce0e3c-fe3d-4bc4-b73f-786470e22665"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="13" width="100" height="20" uuid="7ac8c39b-beb7-48dd-b381-4c9adbb9b286"/>
+				<textFieldExpression><![CDATA[$F{ubicacion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
