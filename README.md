@@ -13,4 +13,3 @@ Estudiante de desarrollo multiplataforma y amante apasionado del código. 👨�
 
 🌱 Siempre en constante aprendizaje, porque en el mundo del desarrollo, ¡siempre hay algo nuevo que descubrir!
 
-¡Hagamos el código hablar y construyamos cosas asombrosas juntos! 🖥️✨ 
